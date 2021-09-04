@@ -1,6 +1,6 @@
 package collection;
 
-public interface ILinkedList<T> {
+public interface ILinkedList<T extends Comparable<T>> {
    public String addNode(T node);
    public String removeNode(int pos);
    public String editNode(int pos,T node);
