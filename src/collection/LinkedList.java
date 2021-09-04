@@ -1,7 +1,6 @@
 package collection;
 
-public class LinkedList<T extends Comparable<T>> implements ILinkedList<T> {
-    private LinkedNode<T> root;
+public class LinkedList <T extends Comparable<T>> implements ILinkedList<T>{
 
     @Override
     public String addNode(T node) {
@@ -32,5 +31,4 @@ public class LinkedList<T extends Comparable<T>> implements ILinkedList<T> {
     public int size() {
         return 0;
     }
-
 }
