@@ -1,6 +1,6 @@
 package collection;
 
-public class LinkedNode<T> {
+public class LinkedNode<T extends Comparable<T>> {
     private LinkedNode<T> next;
     private T info;
 
@@ -12,7 +12,15 @@ public class LinkedNode<T> {
         return info;
     }
 
+    public void setInfo(T elem){
+       info = elem;
+    }
+
     public LinkedNode<T> getNext(){
         return next;
+    }
+
+    public void setNext(LinkedNode<T> newNext){
+        next = newNext;
     }
 }
